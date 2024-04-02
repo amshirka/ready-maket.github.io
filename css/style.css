@@ -1,0 +1,187 @@
+body .roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body .open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.container .header .burger-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+.container .header .burger {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: none;
+  background: transparent;
+  width: 50px;
+  height: 28px;
+  margin: 30px 0;
+}
+.container .header .burger::before,
+.container .header .burger::after {
+  content: "";
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  background-color: #000;
+}
+.container .header .burger::before {
+  top: 0;
+  box-shadow: 0 11px 0 #000;
+  transition: box-shadow 0.3s 0.15s, top 0.3s 0.15s, transform 0.3s;
+}
+.container .header .burger::after {
+  bottom: 0;
+  transition: bottom 0.3s 0.15s, transform 0.3s;
+}
+.container .header .burger-checkbox:checked + .burger::before {
+  top: 11px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+  transition: box-chadow 0.15s, top 0.3s, transform 0.3s 0.15s;
+}
+.container .header .burger-checkbox:checked + .burger::after {
+  bottom: 11px;
+  transform: rotate(-45deg);
+  transition: bottom 0.3s, transform 0.3s 0.15s;
+}
+.container .header .menu-list {
+  top: 70px;
+  left: 0;
+  position: absolute;
+  display: grid;
+  gap: 12px;
+  padding: 42px 0;
+  margin: 0;
+  background-color: blue;
+  border-radius: 0 20px 20px 0;
+  list-style-type: none;
+  transform: translateX(-100%);
+  transition: 0.3s;
+  width: 200px;
+}
+.container .header .menu-item {
+  display: block;
+  padding: 8px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+.container .header .menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.container .header .burger-checkbox:checked ~ .menu-list {
+  transform: translate(0);
+}
+.container .main h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 60px;
+  line-height: 82px;
+  font-weight: 600;
+}
+.container .main .img1 {
+  background-color: rgba(0, 0, 0, 0.15);
+  background-image: url(../img/img1.png);
+  background-repeat: no-repeat;
+  width: 1168px;
+  height: 353px;
+  margin-top: 68px;
+  margin-bottom: 60px;
+  border-radius: 20px;
+}
+.container .main .text {
+  width: 1168px;
+  height: auto;
+  -moz-column-width: 48%;
+       column-width: 48%;
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 4%;
+       column-gap: 4%;
+  font-family: Roboto, sans-serif;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.form {
+  width: 1150px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 50px 25px 50px;
+  background: rgb(241, 241, 241);
+  border-radius: 20px;
+}
+.form .form-text {
+  width: 518px;
+  height: 216px;
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.form .form-input {
+  width: 416px;
+  height: 248px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  font-family: Roboto, sans-serif;
+}
+.form .form-input input {
+  width: 416px;
+  height: 52px;
+  padding: 11px 24px 11px 24px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.form .form-input input input::-moz-placeholder {
+  color: #000;
+}
+.form .form-input input input::placeholder {
+  color: #000;
+}
+.form .form-input .btn {
+  width: 207px;
+  height: 52px;
+  border-radius: 10px;
+  background: rgb(61, 59, 255);
+  padding: 11px 54px;
+  color: rgb(255, 255, 255);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0%;
+}

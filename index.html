@@ -1,0 +1,72 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+	<!-- Заголовок страницы в браузере -->
+	<title>Тур в Абхазию</title>
+	<!-- Подключаем CSS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@400;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/reset-style.css">
+	<link rel="stylesheet" href="source/scss/style.scss">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Кодировка страницы -->
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+</head>
+<!-- Отображаемое тело страницы -->
+
+<body>
+
+	<div class="container">
+		<header class="header">
+			<div class="menu">
+				<input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+				<label for="burger-checkbox" class="burger"></label>
+				<ul class="menu-list">
+					<li><a href="#" class="menu-item">Главная</a>
+					<li>
+					<li><a href="#" class="menu-item">О нас</a>
+					<li>
+					<li><a href="#" class="menu-item">Команда</a>
+					<li>
+					<li><a href="#" class="menu-item">Контакты</a>
+					<li>
+				</ul>
+			</div>
+		</header>
+		<main class="main">
+			<h1>Тур в Абхазию от агентства «Телепорт»</h1>
+			<section class="img1">
+			</section>
+			<section class="text .roboto-regular">
+				Вас ждёт незабываемая экскурсия на озеро Рица, Юпшарский каньон и водопад Мужские слёзы. <span>Бесплатные
+					дегустации</span>
+				вина, чая и мёда сделают отдых ещё приятнее. А самые смелые туристы смогут <span>отправиться на сплав</span> по
+				горной реке
+				и полетать на параплане.
+			</section>
+			<section class="form">
+				<div class="form-text .open-sans">
+					<h2>Оставьте заявку и забронируйте тур по минимальной цене!</h2>
+				</div>
+				<div class="form-input .roboto-regular">
+					<form action="#" method="get">
+						<input tabindex="1" placeholder="Имя" type="text" name="Name" id="name">
+						<input tabindex="2" placeholder="Телефон" type="tel" name="phone" id="phone">
+						<input tabindex="3" placeholder="Email" type="email" name="mail" id="mail">
+						<button tabindex="4" class="btn" type="submit">Записаться</button>
+					</form>
+				</div>
+			</section>
+		</main>
+	</div>
+
+</body>
+
+</html>
